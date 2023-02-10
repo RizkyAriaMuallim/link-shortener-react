@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import InputShortener from './components/InputShortener'
+import InputShortener from './components/InputShortener';
+import UrlShortener from './components/UrlShortener';
 
 function App() {
   const [dataInput, setDataInput] = useState("");
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className='container'>
       <InputShortener setDataInput={setDataInput} />
+      <UrlShortener dataInput={dataInput} />
     </div>
   )
 }
