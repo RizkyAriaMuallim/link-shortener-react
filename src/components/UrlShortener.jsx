@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 
-
 function UrlShortener({dataInput}) {
     const [newLink, setNewLink] = useState("");
     const [status, setStatus] = useState(false);
@@ -17,6 +16,7 @@ function UrlShortener({dataInput}) {
             // Destruction from above
             const {result} = value;
             const {short_link} = result;
+            console.log(result);
             // new link
             setNewLink(short_link);
         } catch (error){

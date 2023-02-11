@@ -4,7 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
-
+body {
+  background-image: url(./assets/pattern.svg);
+}
 .logo {
   height: 6em;
   padding: 1.5em;
